@@ -1,0 +1,29 @@
+{% load staticfiles %}
+
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}"> 
+</head>
+<body class="body-check">
+<h2>UserName:{{request.session.username}}
+<a href="{% url 'logout' %}">Logout</a></h2>
+
+<table>
+<tr>
+<td>First Name</td>
+<td>Last Name</td>
+<td>Mobile</td>
+<td>Email</td>
+</tr>
+{% for registration in RegistratioData %}
+<tr>
+	<td>{{ registration.first_name }}</td>
+	<td>{{ registration.last_name }}</td>
+	<td>{{ registration.mobile }}</td>
+	<td>{{ registration.email }}</td>
+</tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

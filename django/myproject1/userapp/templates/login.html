@@ -1,0 +1,16 @@
+{% load staticfiles %}
+
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/login.css'%}"> 
+</head>
+<body class="body-check">
+<h2>Login form</h2>
+	<form method="post">
+		{% csrf_token %}
+		{{lform}}
+		<input type="submit" class="button-login" value="Login">
+		<input type="reset" class="button-clear" value="Clear">
+	<form>
+</body>
+</html>

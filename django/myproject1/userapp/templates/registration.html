@@ -1,0 +1,16 @@
+{% load staticfiles %}
+
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/reg.css'%}"> 
+</head>
+<body class="body-check">
+<h2>Registration form</h2>
+	<form method="post" class="formReg">
+		{% csrf_token %}
+		{{rform}}
+		<input type="submit" class="button-singup" value="Sing Up">
+		<input type="reset" class="button-singup" value="Clear">
+	<form>
+</body>
+</html>

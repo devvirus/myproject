@@ -1,0 +1,71 @@
+{% load staticfiles %}
+
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="{% static 'css/home.css'%}"> 
+</head>
+<body class="body-check">
+<h2>Student Record:</h2>
+
+<table>
+<tr>
+<td>Student Name</td>
+<td>Mobile</td>
+</tr>
+{% for student in student_data %}
+<tr>
+	<td>{{ student.sname }}</td>
+	<td>{{ student.smobile }}</td>
+</tr>
+{% endfor %}
+</table>
+<h2>Publisher Record:</h2>
+<table>
+<tr>
+<td>Publisher Name</td>
+<td>Publisher Email</td>
+</tr>
+{% for publisher in publisher_data %}
+<tr>
+
+	<td>{{ publisher.publisher_name }}</td>
+	<td>{{ publisher.publisher_email }}</td>
+    
+
+</tr>
+{% endfor %}
+</table>
+<h2>Auther Record:</h2>
+<table>
+<tr>
+<td>Auther Name</td>
+<td>Auther Email</td>
+</tr>
+{% for auther in auther_data %}
+<tr>
+
+	<td>{{ auther.auther_name }}</td>
+	<td>{{ auther.auth_email }}</td>
+    
+
+</tr>
+{% endfor %}
+</table>
+<h2>Book Record:</h2>
+<table>
+<tr>
+<td>book Name</td>
+<td>Cost</td>
+</tr>
+{% for book in book_data %}
+<tr>
+
+	<td>{{ book.bname }}</td>
+	<td>{{ book.bcost }}</td>
+    
+
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

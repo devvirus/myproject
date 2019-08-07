@@ -1,0 +1,13 @@
+.body-check{
+	margin-left: 35%;
+	margin-top: 10%;	
+	background:grey;
+
+}
+.body-check table{
+	border:1px solid #000;
+}
+.body-check table tr td{
+	border:1px solid #000;
+	font-family:bold;
+}

@@ -1,0 +1,11 @@
+DEBUG:root:2019-08-01 18:35:41Starting Daily Cron For Deleting Older Backups
+DEBUG:root:2019-08-01 18:35:41 File Not Present /home/portal/python/demo/prateek/2019-07-01.txt
+DEBUG:root:2019-08-01 18:36:33Starting Daily Cron For Deleting Older Backups
+DEBUG:root:2019-08-01 18:36:33 Starting deletion of folder /home/portal/python/demo/prateek/2019-07-01.txt
+DEBUG:root:2019-08-01 18:36:33 Completed folder deletion /home/portal/python/demo/prateek/2019-07-01.txt
+DEBUG:root:2019-08-01 18:38:07Starting Daily Cron For Deleting Older Backups/n
+DEBUG:root:2019-08-01 18:38:07 Starting deletion of folder /home/portal/python/demo/prateek/2019-07-01.txt
+DEBUG:root:2019-08-01 18:38:07 Completed folder deletion /home/portal/python/demo/prateek/2019-07-01.txt
+DEBUG:root:2019-08-01 18:44:19Starting Daily Cron For Deleting Older Backups
+DEBUG:root:2019-08-01 18:44:19 Starting deletion of folder /home/portal/python/demo/prateek/2019-07-01.txt
+DEBUG:root:2019-08-01 18:44:19 Completed folder deletion /home/portal/python/demo/prateek/2019-07-01.txt
