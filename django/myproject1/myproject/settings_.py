@@ -126,14 +126,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-#on diploy
-STATIC_ROOT="/home/portal/python/django/myproject1/static/";
 STATIC_URL = '/static/'
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates'),
 )
 STATICFILES_DIR=[
-	 os.path.join(BASE_DIR, "static")
+	os.path.join(BASE_DIR, 'static'),
 ]
 '''CACHES = {
     'default': {

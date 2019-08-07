@@ -20,9 +20,6 @@ from rest_framework import routers
 from quickstart import views as appview
 from myapp import views as myapp_view
 from userapp import views as user_view
-from polls import views as polls_view
-from django.conf import settings
-from django.conf.urls.static import static
 
 router=routers.DefaultRouter()
 router.register(r'users', appview.UserViewSet)
@@ -41,11 +38,9 @@ urlpatterns = [
 	url(r'^home/',user_view.home_view),
 	url(r'^logout/',user_view.logout_view,name='logout'),
 	url(r'^admin/', admin.site.urls),
-	url(r'^polls/', polls_view.pollindex,name='pollindex'),
 	#url(r'hello/', appview.HelloView.as_view(), name='hello'),
 	#url(r'demoview/', appview.RegisterView.as_view(), name='registerview'),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-
+]
 '''urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^login/',views.login_view),
